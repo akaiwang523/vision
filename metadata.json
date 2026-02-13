@@ -1,0 +1,8 @@
+
+{
+  "name": "Gemini Vision AI",
+  "description": "A powerful image recognition and analysis tool powered by Gemini 3 Flash. Upload or capture photos to identify objects, text, and scenes in real-time.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
