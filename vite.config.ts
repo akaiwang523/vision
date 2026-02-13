@@ -1,16 +1,8 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  define: {
-    'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
-  },
-  server: {
-    port: 3000
-  },
-  build: {
-    outDir: 'dist'
-  }
-});
+  base: '/', // 試著明確設定為 '/'，或者如果是子路徑則用 './'
+})
